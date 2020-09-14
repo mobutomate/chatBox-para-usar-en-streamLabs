@@ -1,3 +1,4 @@
+
 * {
     box-sizing: border-box;
   	
@@ -16,6 +17,7 @@ body {
     font-size: {font_size};
     line-height: 1.5em;
   	max-width:700px;
+  	color: {text_color};
     
 }
 
@@ -65,7 +67,7 @@ body {
     display: table-cell;
     padding-bottom: 0.1em;
 }
-
+/*NICKNAME*/
 #log .meta {
   	/*Color de las lineas de abajo del nickname y "double underline" para que sean dos lineas*/
   	text-decoration: #fff double underline;
@@ -80,17 +82,17 @@ body {
   	
   	/*acá es lo grueso del texto del nickname*/
   	font-weight: 800;
-		/* acá abajo es el color de la sombra del nickname*/
+		/* acá abajo es el color del resplandor del nickname*/
   	text-shadow: 0px 0px 6px rgba(255,255,255,0.1);
                  
 }
-
+/*CHAT-MENSAJE*/
 #log .message {
     word-wrap: break-word;
-  	color: #fff;
   	/*Color del borde blanco "rgb(255 255 255)" y el tamaño de la linea que es de 1px*/
   	border: solid rgb(255, 255, 255) 2px;
   	padding: 20;
+  	/*acá es lo grueso del texto del chat*/
   	font-weight: 500;
   	
   	
