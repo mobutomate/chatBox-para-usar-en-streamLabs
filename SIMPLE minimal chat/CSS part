@@ -1,0 +1,110 @@
+* {
+    box-sizing: border-box;
+  	
+}
+
+html, body {
+    height: 100%;
+    overflow: hidden;
+  	
+  	
+}
+
+body {
+  	/*Fuente de googleFont que se añadio en la parte html*/
+    font-family: 'Karla', sans-serif;
+    font-size: {font_size};
+    line-height: 1.5em;
+  	max-width:700px;
+    
+}
+
+#log>div {
+    animation: fadeInRight .3s ease forwards, fadeOut 0.5s ease {message_hide_delay} forwards;
+    -webkit-animation: fadeInRight .3s ease forwards, fadeOut 0.5s ease {message_hide_delay} forwards;
+}
+
+.colon {
+    display: none;
+}
+
+#log {
+    
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 0 10px 10px;
+    width: 100%;
+    
+}
+
+#log>div {
+    margin: 1em;
+}
+
+#log>div.deleted {
+    visibility: hidden;
+}
+
+#log .emote {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    padding: 0.4em 0.2em;
+    position: relative;
+}
+
+#log .emote img {
+    display: inline-block;
+    height: 1em;
+    opacity: 0;
+}
+
+#log .message,#log .meta {
+    vertical-align: top;
+    display: table-cell;
+    padding-bottom: 0.1em;
+}
+
+#log .meta {
+  	/*Color de las lineas de abajo del nickname y "double underline" para que sean dos lineas*/
+  	text-decoration: #fff double underline;
+  	display: inline-block;
+  	position: relative;
+  	top: 0px;
+    text-align: right;
+    padding: 0em;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  	
+  	/*acá es lo grueso del texto del nickname*/
+  	font-weight: 800;
+		/* acá abajo es el color de la sombra del nickname*/
+  	text-shadow: 0px 0px 6px rgba(255,255,255,0.1);
+                 
+}
+
+#log .message {
+    word-wrap: break-word;
+  	color: #fff;
+  	/*Color del borde blanco "rgb(255 255 255)" y el tamaño de la linea que es de 1px*/
+  	border: solid rgb(255, 255, 255) 2px;
+  	padding: 20;
+  	font-weight: 500;
+  	
+  	
+}
+
+.badge {
+    display: inline-block;
+    margin-right: 0.2em;
+    position: relative;
+    height: 1em;
+    vertical-align: middle;
+    top: -0.1em;
+}
+
+.name {
+    margin-left: 0.2em;
+}
