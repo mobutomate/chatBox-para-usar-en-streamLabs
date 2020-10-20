@@ -3,9 +3,9 @@
 </div>
 
 <!-- chat item -->
-<!-- Acá abajo se añade el font desde google, la parte html-->
+<!-- Acá abajo se añade el font desde google-->
 <link href="https://fonts.googleapis.com/css2?family=Nosifer&display=swap" rel="stylesheet">
-
+<!-- en una parte del chat se elimina lo de > style:"color: (color)" para poder cambiar el color del nickname en css-->
 <script type="text/template" id="chatlist_item">
   <div data-from="{from}" data-id="{messageId}">
     <span class="meta" >
