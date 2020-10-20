@@ -1,0 +1,21 @@
+<!-- item will be appened to this layout -->
+<div id="log" class="sl__chat__layout">
+</div>
+
+<!-- chat item -->
+<!-- Acá abajo se añade el font desde google, la parte html-->
+<link href="https://fonts.googleapis.com/css2?family=Nosifer&display=swap" rel="stylesheet">
+
+<script type="text/template" id="chatlist_item">
+  <div data-from="{from}" data-id="{messageId}">
+    <span class="meta" >
+      <span class="badges">
+      </span>
+      <span class="name">{from}</span>
+    </span>
+
+    <span class="message">
+      {message}
+    </span>
+  </div>
+</script>
