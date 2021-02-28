@@ -1,0 +1,138 @@
+body {
+  background: $background_color;
+  color: $text_color;
+  font-size: $font_size;
+}
+
+.colon, .name {
+  height: 0px;
+}
+
+html, body {
+  height: 100%;
+  overflow: hidden;
+}
+body {
+  
+  margin: 0;
+}
+
+#custom_html {
+  height: 100%;
+  vertical-align: bottom;
+  
+}
+
+.sl__chat__layout {
+  /*Tipo de fuente*/
+  font-family: 'DotGothic16', sans-serif;
+  /*gordura del texto en general*/
+  font-weight: 200;
+  position: absolute;
+  /*Distancia del chat desde abajo hacia arriba*/
+  bottom: 0;
+  padding-top: 1em;
+  box-sizing: border-box;
+  /*Para cambiar el color del mensaje por codigo es aqui*/
+  
+}
+
+.text_outline {
+    
+}
+
+.sl__chat__layout > div {
+  /*distancia entre mensajes*/
+  padding: 0.5em;
+	/*Mantiene el mensaje en una linea*/
+  word-break: break-all;
+  
+  animation: fadeInRight 0.01s ease forwards, $message_hide_delay forwards;
+  
+  /*velocidad de la aparicion del mensaje y direccion*/
+  -webkit-animation: fadeInRight 3s ease;
+  
+}
+
+/* makes messages go sideway */
+.sl__chat__layout.horizontal_flow {
+  right: 0;
+  text-align: right;
+  /*esto mantiene el mensaje en una linea, si se baja a 50% el mensaje aparece de forma hoizontal*/
+  width: 2500%;
+  overflow: hidden;
+  
+}
+.sl__chat__layout.horizontal_flow > div {
+  
+  display: inline-block;
+  margin-left: 0.1em;
+  position: relative;
+  height: 1em;
+  overflow: hidden;
+}
+
+.sl__chat__layout > div.deleted {
+  
+  visibility: hidden;
+}
+
+.sl__chat__layout .emote {
+  
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  position: relative;
+  padding: 2px;
+  
+}
+
+.sl__chat__layout .emote img {
+  
+  display: inline-block;
+  height: 0.8em;
+  opacity: 0;
+}
+
+.badge,.colon,.name {
+  
+  display: inline-block;
+  vertical-align: top;
+}
+
+.sl__chat__layout .meta {
+  /*Color del nickname*/
+  color: rgb(0, 255, 188);
+  /* the closing tag of `.meta` being in a new line creates a whitespace. */
+  /* unless it changes, padding-right won't be included. */
+  padding-right: 0x;
+  position: relative;
+  /*Distancia entre el nickname y el mensaje*/
+  margin-right: 5px;
+  
+}
+
+.badge {
+  /*posicion de los emblemas de los nicname */
+  margin: 2px;
+  
+  height: 0.9em;
+  position: relative;
+}
+
+.name {
+ 	
+  /*Gordura del nickname añadido*/
+  font-weight: 500;
+}
+
+
+.message > img[src*=".gif"] {
+  
+  padding-right: 4px;
+}
+.message > img[src*=".gif"] + font {
+  position: relative;
+  top: -0.25em;
+  
+}
